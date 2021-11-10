@@ -4,7 +4,7 @@ task:
 
 Write a function that finds an integer 'x' in an unsorted array 'A'
 and returns the index of the element's first occurence
-if it is contained in the arra, ootherwise return -1.
+if it is contained in the array, otherwise return -1.
 
 '''
 
