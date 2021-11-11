@@ -44,6 +44,9 @@ def three_number_sort(array, order):
 
 
 
+
+# this solution respects the "in-place" condition
+
 def three_number_sort_TWO(array, order):
   if(len(array) <= 1):
     return array
