@@ -23,6 +23,9 @@ def insertion_sort(array):
   partition_index = 0
   leng = len(array)
 
+  if(leng < 2):
+    return array
+
   for j in range(0,leng):
     flag = True
     ind = j
@@ -35,4 +38,30 @@ def insertion_sort(array):
       
   return array
 
+
+
+def insertion_sort_TWO(array):
+  length = len(array)
+
+  if length >= 2:
+    for k in range(1,length):
+      complete = False
+      i = k
+      while(True):
+        if (i >= 1 and array[i-1] > array[i]):
+          j = array[i-1]
+          array[i-1] = array[i]
+          array[i] = j
+          i -= 1
+        else:
+          break
+    return array
+
+  else:
+    return array
+
+
+
 print(insertion_sort(array))
+
+print(insertion_sort_TWO(array))
