@@ -1,3 +1,10 @@
 - latex / pdftex command
 
 -  xgd-open
+
+
+
+
+- REVISIT: 
+
+  - quick_sort.py
