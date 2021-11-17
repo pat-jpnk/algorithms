@@ -22,7 +22,7 @@ class heaps:
       self.insert(i)
       self.perculate((self.count - 1))
     return self.data
-
+  
   def insert(self, val):
     self.data.append(val)
     self.count += 1
@@ -38,8 +38,6 @@ class heaps:
 
   def parent_index(self,i):
     return ((i - 1) // 2)
-
-
 
 # heapsort algorithm
 
@@ -72,6 +70,7 @@ def sift_down(heap, start, end):
       swap = root
 
 
+data2 = [4,6,5,1,4]
 data = [4,6,12,53,1,3]
 kk = heaps()
 jj = kk.max_heap(data)
